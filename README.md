@@ -4,3 +4,6 @@ Requirements and UML Diagram https://docs.google.com/document/d/1UmpO0FLK6i6YNSY
 UI Layout: https://github.com/rcbyr/keen-slider
 
 Github templates https://github.com/brillout/awesome-react-components#editable-data-grid--spreadsheet
+
+Presentation: https://docs.google.com/presentation/d/16REHyq92quNd80oVK5OEuiOsf3znsraswKyJHXpwLVE/edit?usp=sharing
+
