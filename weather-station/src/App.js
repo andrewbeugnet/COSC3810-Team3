@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Layouts from './Layout'
+import Splitter from 'm-react-splitters';
+import 'm-react-splitters/lib/splitters.css';
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layouts>
+      
+      </Layouts>
+      
+
     </div>
   );
-}
+  }
 
 export default App;
