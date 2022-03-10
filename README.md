@@ -7,3 +7,5 @@ Github templates https://github.com/brillout/awesome-react-components#editable-d
 
 Presentation: https://docs.google.com/presentation/d/16REHyq92quNd80oVK5OEuiOsf3znsraswKyJHXpwLVE/edit?usp=sharing
 
+Card component: https://coreui.io/react/docs/components/card/
+
