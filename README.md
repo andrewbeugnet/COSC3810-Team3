@@ -9,3 +9,5 @@ Presentation: https://docs.google.com/presentation/d/16REHyq92quNd80oVK5OEuiOsf3
 
 Card component: https://coreui.io/react/docs/components/card/
 
+https://www.c-sharpcorner.com/article/fetching-data-using-web-api-in-react/
+
