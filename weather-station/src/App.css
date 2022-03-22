@@ -115,7 +115,7 @@ body {
 }
 
 .mb-2 {
-  border:springgreen
+  border: black;
 }
 
 .navigation-wrapper {
@@ -170,5 +170,3 @@ body {
 .arrow--disabled {
   fill: rgba(255, 255, 255, 0.5);
 }
-
-
