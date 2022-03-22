@@ -114,6 +114,10 @@ body {
   );
 }
 
+.mb-2 {
+  border:springgreen
+}
+
 .navigation-wrapper {
   position: relative;
 }
