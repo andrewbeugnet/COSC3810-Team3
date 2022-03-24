@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "+55d+W4KbXXYlMJhPMpKMsgm1iNhp15zR+9F5wmU8WU=",
+  "Source": "weather-station2",
+  "BasePath": "_content/weather-station2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

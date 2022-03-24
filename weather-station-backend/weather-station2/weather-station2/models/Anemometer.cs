@@ -17,7 +17,7 @@ namespace weather_station2.models
         public string GetWindDirection()
         {
             Random rnd = new Random();
-            int value = rnd.NextInt64(4);
+            int value = (int)rnd.NextInt64(4);
             switch(value)
             {
                 case 0:
@@ -28,6 +28,8 @@ namespace weather_station2.models
                 return "West";
                 case 3:
                 return "North";
+                default:
+                return "No Wind";
             }
         }
     }
