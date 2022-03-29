@@ -18,8 +18,14 @@ namespace weather_station2.Controllers
         [HttpGet]
         public IEnumerable<WeatherStation> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherStation(50.0, 50.0, 50.0, 50.0))
-            .ToArray();
+            List<WeatherStation> stationList = new List<WeatherStation>();
+            WeatherStation station1 = new WeatherStation();
+            station1.anemometer = new Anemometer(50);
+            station1.barometer = new Barometer(50);
+            station1.rainGauge = new RainGauge(50);
+            station1.thermometer = new Thermometer(50);
+            stationList.Add(station1);
+            return stationList;
         }
     }
 }

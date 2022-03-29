@@ -3,10 +3,14 @@ namespace weather_station2.models
     public class Anemometer : Sensor
     {
         private double medianWindSpeed;
+        public double windspeed { get; set; }
+        public string direction { get; set; }
 
         public Anemometer(double medianWindSpeed)
         {
             this.medianWindSpeed = medianWindSpeed;
+            this.direction = GetWindDirection();
+            this.windspeed = GetWindSpeed();
         }
 
         public double GetWindSpeed()
@@ -32,5 +36,6 @@ namespace weather_station2.models
                 return "No Wind";
             }
         }
+
     }
 }
