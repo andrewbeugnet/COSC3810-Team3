@@ -42,11 +42,9 @@ export default function Layout({ children }) {
           <div 
           className="keen-slider__slide number-slide1"
           >
-          
-            {/* <div>
-              <h1>Test</h1>
-            </div> */}
-            {/* <div style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}> */}
+            <div>
+              Location 1
+            </div>
               <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
                 <CardContent>
                   <Typography
@@ -96,6 +94,9 @@ export default function Layout({ children }) {
           
           </div>
           <div className="keen-slider__slide number-slide2">
+          <div>
+              Location 2
+          </div>
           <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
                 <CardContent>
                   <Typography
@@ -141,6 +142,9 @@ export default function Layout({ children }) {
             </Card>
           </div>
           <div className="keen-slider__slide number-slide3">
+          <div>
+              Location 3
+            </div>
           <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
                 <CardContent>
                   <Typography
@@ -186,6 +190,9 @@ export default function Layout({ children }) {
             </Card>
           </div>
           <div className="keen-slider__slide number-slide4">
+          <div>
+              Location 4
+            </div>
           <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
                 <CardContent>
                   <Typography
@@ -231,6 +238,9 @@ export default function Layout({ children }) {
             </Card>
           </div>
           <div className="keen-slider__slide number-slide5">
+          <div>
+              Location 5
+            </div>
           <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
                 <CardContent>
                   <Typography
@@ -276,6 +286,9 @@ export default function Layout({ children }) {
             </Card>
           </div>
           <div className="keen-slider__slide number-slide6">
+          <div>
+              Location 6
+            </div>
           <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
                 <CardContent>
                   <Typography
