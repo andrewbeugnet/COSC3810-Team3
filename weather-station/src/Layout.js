@@ -34,74 +34,292 @@ export default function Layout({ children }) {
   return (
     <>
       <div className="navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider">
-          <div className="keen-slider__slide number-slide1">
-            {/* <CCard
-              className="mb-2"
-              style={{ maxWidth: "100px", maxHeight: "100px", border: "black"}}
-            >
-              <CCardText> Hello </CCardText>
-            </CCard> */}
-            {/* <CCard style={{ width: '18rem' }}>
-              <CCardImage orientation="top" src="/images/react.jpg" />
-              <CCardBody>
-                <CCardTitle>Card title</CCardTitle>
-                <CCardText>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </CCardText>
-                <CButton href="#">Go somewhere</CButton>
-              </CCardBody>
-            </CCard> */}
-            <Card
-        style={{
-          width: 400,
-          backgroundColor: "yellow",
-        }}
-      >
-        <CardContent>
-          <Typography
-            style={{ fontSize: 14 }}
-            color="textSecondary"
-            gutterBottom
+        
+        <div 
+        ref={sliderRef} 
+        className="keen-slider"
+        >
+          <div 
+          className="keen-slider__slide number-slide1"
           >
-            Greetings of the day
-          </Typography>
-          <Typography variant="h5" component="h2">
-            How are you ?
-          </Typography>
-          <Typography
-            style={{
-              marginBottom: 12,
-            }}
-            color="textSecondary"
-          >
-            Keep Motivated
-          </Typography>
-          <Typography variant="body2" component="p">
-            Stay Happy
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Stay Safe.....</Button>
-        </CardActions>
-      </Card>
+          
+            {/* <div>
+              <h1>Test</h1>
+            </div> */}
+            {/* <div style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}> */}
+              <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Ground Temperature
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+
+            <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Wind Speed
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+            {/* </div> */}
+            
+          
+          
           </div>
           <div className="keen-slider__slide number-slide2">
-          <CCard style={{ width: '18rem', border: "black" }}>
-              <CCardImage orientation="top" src="src/images/react.jpeg" />
-              <CCardBody>
-                <CCardTitle>Card title</CCardTitle>
-                <CCardText>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </CCardText>
-                {/* <CButton href="#">Go somewhere</CButton> */}
-              </CCardBody>
-            </CCard>
+          <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Ground Temperature
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+
+            <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Wind Speed
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
           </div>
-          <div className="keen-slider__slide number-slide3">3</div>
-          <div className="keen-slider__slide number-slide4">4</div>
-          <div className="keen-slider__slide number-slide5">5</div>
-          <div className="keen-slider__slide number-slide6">6</div>
+          <div className="keen-slider__slide number-slide3">
+          <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Ground Temperature
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+
+            <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Wind Speed
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+          </div>
+          <div className="keen-slider__slide number-slide4">
+          <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Ground Temperature
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+
+            <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Wind Speed
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+          </div>
+          <div className="keen-slider__slide number-slide5">
+          <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Ground Temperature
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+
+            <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Wind Speed
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+          </div>
+          <div className="keen-slider__slide number-slide6">
+          <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Ground Temperature
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+
+            <Card style={{ width: "30%", height: "50%", right: "15%", backgroundColor: "yellow", }}>
+                <CardContent>
+                  <Typography
+                    style={{ fontSize: 40 }}
+                    color="black"
+                    gutterBottom
+                  >
+                    Wind Speed
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Average:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Minimum:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    Maximum:
+                  </Typography>
+                </CardContent>
+                
+            </Card>
+          </div>
         </div>
         {loaded && instanceRef.current && (
           <>
