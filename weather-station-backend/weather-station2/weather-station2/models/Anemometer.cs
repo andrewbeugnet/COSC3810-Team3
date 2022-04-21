@@ -1,41 +1,30 @@
 namespace weather_station2.models
 {
-    public class Anemometer : Sensor
+    public class Anemometer
     {
-        private double medianWindSpeed;
-        public double windspeed { get; set; }
-        public string direction { get; set; }
-
-        public Anemometer(double medianWindSpeed)
-        {
-            this.medianWindSpeed = medianWindSpeed;
-            this.direction = GetWindDirection();
-            this.windspeed = GetWindSpeed();
-        }
-
-        public double GetWindSpeed()
-        {
-            return GetSensorValue(medianWindSpeed, 4, false);
-        }
-
         public string GetWindDirection()
         {
             Random rnd = new Random();
-            int value = (int)rnd.NextInt64(4);
+            int value = rnd.NextInt64(8);
             switch(value)
             {
                 case 0:
-                return "South";
+                return "N";
                 case 1:
-                return "East";
+                return "NE";
                 case 2:
-                return "West";
+                return "E";
                 case 3:
-                return "North";
-                default:
-                return "No Wind";
+                return "SE";
+                case 4:
+                return "S";
+                case 5:
+                return "SW";
+                case 6:
+                return "W";
+                case 7:
+                return "NW";
             }
         }
-
     }
 }
