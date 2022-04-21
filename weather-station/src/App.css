@@ -180,10 +180,14 @@ body {
   right: 27%;
 }
 
-.groundTemp {
+.tempIcon {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 15%;
+}
+.imgSize {
+  width: 100px;
+
 }
 
 .average {
@@ -201,4 +205,31 @@ body {
   position: absolute;
   right: 28%;
   top: 70%
+}
+
+.wind-direction{
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  font-size: larger;
+}
+
+.wind-direction-title {
+  position: absolute;
+  bottom: 15%;
+}
+
+.rainfall-title{
+  position: absolute;
+  bottom: 5%;
+}
+.rainfall-icon {
+  position: absolute;
+  top: 15%;
+}
+.rainfall-image-size {
+  position: absolute;
+  width: 100px;
+  left: 65px;
+  top: 1px;
 }

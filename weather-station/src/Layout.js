@@ -6,7 +6,10 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
-import groundTemp from "../src/images/groundtemp.png"
+import groundTemp from "../src/images/groundtemp.png";
+import airTemp from "../src/images/airtemp.png";
+import windSpeed from "../src/images/windspeed.png";
+import rainTotal from "../src/images/raintotal.png";
 
 export default function Layout({ children }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,7 +40,10 @@ export default function Layout({ children }) {
             </div>
             
             <Card className="card-t bottom-left" style={{ width: "40%", height: "40%", right: "15%", backgroundColor: 'rgba(239, 242, 225, 0.4)', }}>
-                <CardContent>
+            <CardContent>
+                  <div className = "tempIcon">
+                  <img className="imgSize" src={windSpeed} />
+                  </div>
                   <Typography
                     style={{ fontSize: 40 }}
                     color="black"
@@ -45,14 +51,14 @@ export default function Layout({ children }) {
                   >
                     Wind Speed
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Average:
+                  <Typography className = "wind-speed average" variant="h5" component="h2">
+                    Average: <b>## °</b>
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Minimum:
+                  <Typography className = "wind-speed min" variant="h5" component="h2">
+                    Minimum: <b>## °</b>
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Maximum:
+                  <Typography className = "wind-speed max" variant="h5" component="h2">
+                    Maximum: <b>## °</b>
                   </Typography>
                 </CardContent>
                 
@@ -60,8 +66,8 @@ export default function Layout({ children }) {
 
             <Card className = "card-t top-left" style={{ width: "40%", height: "40%", right: "50%", backgroundColor: 'rgba(239, 242, 225, 0.4)', }}>
                 <CardContent>
-                  <div className = "groundTemp">
-                  <img src={groundTemp} />
+                  <div className = "tempIcon">
+                  <img className="imgSize" src={groundTemp} />
                   </div>
                   <Typography
                     style={{ fontSize: 40 }}
@@ -84,7 +90,10 @@ export default function Layout({ children }) {
             </Card>
 
             <Card className = "card-t top-right" style={{ width: "40%", height: "40%", boxSizing: "2%", backgroundColor: 'rgba(239, 242, 225, 0.4)', }}>
-                <CardContent>
+              <CardContent>
+                  <div className = "tempIcon">
+                  <img className="imgSize" src={airTemp} />
+                  </div>
                   <Typography
                     style={{ fontSize: 40 }}
                     color="black"
@@ -92,14 +101,14 @@ export default function Layout({ children }) {
                   >
                     Air Temperature
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Average:
+                  <Typography className = "ground-temp average" variant="h5" component="h2">
+                    Average: <b>## °</b>
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Minimum:
+                  <Typography className = "ground-temp min" variant="h5" component="h2">
+                    Minimum: <b>## °</b>
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Maximum:
+                  <Typography className = "ground-temp max" variant="h5" component="h2">
+                    Maximum: <b>## °</b>
                   </Typography>
                 </CardContent>
                 
@@ -111,29 +120,28 @@ export default function Layout({ children }) {
                     color="black"
                     gutterBottom
                   >
-                    Wind Direction
+                    <div className="wind-direction"> <b>NE</b> </div>
+                    <div className="wind-direction-title">Wind Direction</div>
+                    
                   </Typography>
                 </CardContent>
                 
             </Card>
             <Card className = "card-t bottom-right2" style={{ width: "18%", height: "40%", boxSizing: "2%", backgroundColor: 'rgba(239, 242, 225, 0.4)', }}>
                 <CardContent>
+                  
                   <Typography
                     style={{ fontSize: 40 }}
                     color="black"
                     gutterBottom
                   >
-                    Total Rain Fall
+                    <div className="rainfall-icon"> <img className="rainfall-image-size" src={rainTotal} /> </div>
+                    <div className="rainfall-title">
+                      Total Rain Fall
+                    </div>
                   </Typography>
-                  <Typography variant="h5" component="h2">
-                    Average:
-                  </Typography>
-                  <Typography variant="h5" component="h2">
-                    Minimum:
-                  </Typography>
-                  <Typography variant="h5" component="h2">
-                    Maximum:
-                  </Typography>
+                  
+                  
                 </CardContent>
                 
             </Card>
