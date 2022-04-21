@@ -19,3 +19,6 @@ Follow this tutorial: https://www.youtube.com/watch?v=NEYrSUM4Umw
 1. Use above data to populate array of weather station objects at page load
 2. Use array index to populate each card with weather instrument values from weather station
 
+
+<img width="1440" alt="Screen Shot 2022-04-21 at 11 49 51 AM" src="https://user-images.githubusercontent.com/16828182/164512682-6b31a4a9-4d95-49c3-a543-fc9df438ec2b.png">
+
