@@ -265,19 +265,7 @@ export default function Layout({ children }) {
             </div>
           
           </div>
-          <div className="keen-slider__slide number-slide5">
-          <div>
-              Location 5
-            </div>
           
-
-          </div>
-          <div className="keen-slider__slide number-slide6">
-          <div>
-              Location 6
-            </div>
-        
-          </div>
         </div>
         {loaded && instanceRef.current && (
           <>
