@@ -5,7 +5,7 @@ namespace weather_station2.models
         public string GetWindDirection()
         {
             Random rnd = new Random();
-            int value = rnd.NextInt64(8);
+            int value = rnd.Next(8);
             switch(value)
             {
                 case 0:
@@ -25,6 +25,7 @@ namespace weather_station2.models
                 case 7:
                 return "NW";
             }
+            return "HOW?";
         }
     }
 }
