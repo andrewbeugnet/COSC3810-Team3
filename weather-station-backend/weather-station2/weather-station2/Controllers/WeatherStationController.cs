@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using weather_station2.models;
 using System.Linq;
 
@@ -16,6 +17,7 @@ namespace weather_station2.Controllers
             _logger = logger;
         }
 
+        [EnableCors]
         [HttpGet]
         public IEnumerable<WeatherStationViewModel> Get()
         {

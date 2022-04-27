@@ -11,6 +11,8 @@ import airTemp from "../src/images/airtemp.png";
 import windSpeed from "../src/images/windspeed.png";
 import rainTotal from "../src/images/raintotal.png";
 
+import axios from 'axios'
+
 export default function Layout({ children }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -23,6 +25,7 @@ export default function Layout({ children }) {
       setLoaded(true);
     },
   });
+  getData();
 
   return (
     <>
@@ -546,4 +549,15 @@ function Arrow(props) {
       )}
     </svg>
   );
+}
+
+function getData() {
+  axios.get('http://localhost:5197/weatherstation')
+  .then(response => {
+    console.log(response)
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
 }
