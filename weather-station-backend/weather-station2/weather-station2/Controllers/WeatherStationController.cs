@@ -17,7 +17,7 @@ namespace weather_station2.Controllers
         }
 
         [HttpGet]
-        public async IEnumerable<WeatherStationViewModel> Get()
+        public IEnumerable<WeatherStationViewModel> Get()
         {
             var weatherStations = new List<WeatherStation>()
             {
@@ -31,9 +31,9 @@ namespace weather_station2.Controllers
             foreach (WeatherStation station in weatherStations) {
                 var weatherDataList = new List<WeatherData>();
                 for (int i = 0; i < 10; i++) {
-                    weatherDataList.add(station.GetWeatherData());
+                    weatherDataList.Add(station.GetWeatherData());
                 }
-                viewModels.add(new WeatherStationViewModel() {
+                viewModels.Add(new WeatherStationViewModel() {
                     GroundTemperatureAverage = weatherDataList.Select(x => x.GroundTemperature).Average(),
                     GroundTemperatureMinimum = weatherDataList.Select(x => x.GroundTemperature).Min(),
                     GroundTemperatureMaximum = weatherDataList.Select(x => x.GroundTemperature).Max(),
