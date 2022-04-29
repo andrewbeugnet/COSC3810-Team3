@@ -1,7 +1,16 @@
 namespace weather_station2.models
 {
-    public class Anemometer
+    public class Anemometer: Sensor
     {
+
+        private double medianSpeed;
+        public double speed { get; set; }
+        public Anemometer(double medianSpeed)
+        {
+            this.medianSpeed = medianSpeed;
+            this.speed = GetSpeed();
+        }
+
         public string GetWindDirection()
         {
             Random rnd = new Random();
@@ -26,6 +35,11 @@ namespace weather_station2.models
                 return "NW";
             }
             return "HOW?";
+        }
+
+        public double GetSpeed()
+        {
+            return GetSensorValue(medianSpeed, 2, false);
         }
     }
 }

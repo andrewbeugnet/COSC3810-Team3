@@ -23,9 +23,9 @@ namespace weather_station2.Controllers
         {
             var weatherStations = new List<WeatherStation>()
             {
-                new WeatherStation(20, 40, 0.5),
-                new WeatherStation(90, 105, 0),
-                new WeatherStation(45, 62, 1.5)
+                new WeatherStation(20, 40, 0.5, 5, "Phoenix"),
+                new WeatherStation(90, 105, 0, 5, "Milwaukee"),
+                new WeatherStation(45, 62, 1.5, 5, "Seattle")
             };
 
             var viewModels = new List<WeatherStationViewModel>();
@@ -36,14 +36,18 @@ namespace weather_station2.Controllers
                     weatherDataList.Add(station.GetWeatherData());
                 }
                 viewModels.Add(new WeatherStationViewModel() {
-                    GroundTemperatureAverage = weatherDataList.Select(x => x.GroundTemperature).Average(),
-                    GroundTemperatureMinimum = weatherDataList.Select(x => x.GroundTemperature).Min(),
-                    GroundTemperatureMaximum = weatherDataList.Select(x => x.GroundTemperature).Max(),
-                    AirTemperatureAverage = weatherDataList.Select(x => x.AirTemperature).Average(),
-                    AirTemperatureMinimum = weatherDataList.Select(x => x.AirTemperature).Min(),
-                    AirTemperatureMaximum = weatherDataList.Select(x => x.AirTemperature).Max(),
-                    TotalRainfall = weatherDataList.Select(x => x.Rainfall).Sum(),
-                    WindDirection = weatherDataList[9].WindDirection
+                    GroundTemperatureAverage = Math.Round(weatherDataList.Select(x => x.GroundTemperature).Average(),2),
+                    GroundTemperatureMinimum = Math.Round(weatherDataList.Select(x => x.GroundTemperature).Min(),2),
+                    GroundTemperatureMaximum = Math.Round(weatherDataList.Select(x => x.GroundTemperature).Max(),2),
+                    AirTemperatureAverage = Math.Round(weatherDataList.Select(x => x.AirTemperature).Average(),2),
+                    AirTemperatureMinimum = Math.Round(weatherDataList.Select(x => x.AirTemperature).Min(),2),
+                    AirTemperatureMaximum = Math.Round(weatherDataList.Select(x => x.AirTemperature).Max(),2),
+                    WindSpeedAverage = Math.Round(weatherDataList.Select(x => x.WindSpeed).Average(),2),
+                    WindSpeedMinimum = Math.Round(weatherDataList.Select(x => x.WindSpeed).Min(),2),
+                    WindSpeedMaximum = Math.Round(weatherDataList.Select(x => x.WindSpeed).Max(),2),
+                    TotalRainfall = Math.Round(weatherDataList.Select(x => x.Rainfall).Sum(),2),
+                    WindDirection = weatherDataList[9].WindDirection,
+                    Location = weatherDataList[9].Location
                 });
             }
 

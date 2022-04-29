@@ -221,11 +221,18 @@ body {
 
 .rainfall-title{
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
 }
 .rainfall-icon {
   position: absolute;
   top: 15%;
+}
+
+.rainfall{
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  text-align: center;
 }
 .rainfall-image-size {
   position: absolute;

@@ -6,16 +6,16 @@ namespace weather_station2.models
         private Thermometer groundThermometer;
         private RainGauge rainGauge;
         private Anemometer anemometer;
-        private Guid stationId;
+        private string location;
 
-        public WeatherStation(double medianGroundTemperature, double medianAirTemperature,  double medianRainfall)
+        public WeatherStation(double medianGroundTemperature, double medianAirTemperature,  double medianRainfall, double medianSpeed, string name)
         {
             airThermometer = new Thermometer(medianAirTemperature);
             groundThermometer = new Thermometer(medianGroundTemperature);
             rainGauge = new RainGauge(medianRainfall);
-            anemometer = new Anemometer();
+            anemometer = new Anemometer(medianSpeed);
 
-            stationId = Guid.NewGuid();
+            location = name;
         }
 
         public WeatherData GetWeatherData()
@@ -24,7 +24,10 @@ namespace weather_station2.models
                 GroundTemperature = groundThermometer.GetTemperature(),
                 AirTemperature = airThermometer.GetTemperature(),
                 Rainfall = rainGauge.GetRainfall(),
-                WindDirection = anemometer.GetWindDirection()};
+                WindDirection = anemometer.GetWindDirection(),
+                WindSpeed = anemometer.GetSpeed(),
+                Location = location
+                };
         }
     }
 }

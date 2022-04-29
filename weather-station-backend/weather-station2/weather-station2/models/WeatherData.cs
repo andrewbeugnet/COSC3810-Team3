@@ -6,5 +6,9 @@ namespace weather_station2.models
         public double AirTemperature;
         public double Rainfall;
         public string WindDirection;
+
+        public double WindSpeed;
+
+        public string Location;
     }
 }
