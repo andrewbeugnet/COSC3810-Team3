@@ -289,9 +289,7 @@ export default function Layout({ children }) {
                     gutterBottom
                   >
                     <div className="rainfall-icon"> <img className="rainfall-image-size" src={rainTotal} /> </div>
-                    <div className="rainfall-title">
-                      Total Rain Fall
-                    </div>
+                    <div className="rainfall-title">Total Rainfall</div>
                     <div className="rainfall" variant="h5" component="h2">
                       <b>{rainfall.at(1)} in</b></div>
                   </Typography>
@@ -403,9 +401,7 @@ export default function Layout({ children }) {
                     gutterBottom
                   >
                     <div className="rainfall-icon"> <img className="rainfall-image-size" src={rainTotal} /> </div>
-                    <div className="rainfall-title">
-                      Total Rain Fall
-                    </div>
+                    <div className="rainfall-title">Total Rainfall</div>
                     <div className="rainfall" variant="h5" component="h2">
                       <b>{rainfall.at(2)} in</b></div>
                   </Typography>
